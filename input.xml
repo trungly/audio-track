@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loggingpayload xmlns:e="http://schema.dadcdigital.com/dbb/data/2010/externaltask/logging" xmlns:t="http://schema.dadcdigital.com/dbb/data/2010/externaltask/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <t:duedate>
+  </t:duedate>
+  <e:title xmlns:a="http://schema.dadcdigital.com/dbb/data/2010/inventory/">
+    <a:displaycode>6714</a:displaycode>
+    <a:titlelevel>Episode</a:titlelevel>
+    <a:name>ANTHROPOLOGY 101</a:name>
+    <a:seriesname>COMMUNITY</a:seriesname>
+    <a:seasonname>SEASON 02</a:seasonname>
+    <a:episodenumber></a:episodenumber>
+    <a:alphas>
+      <a:alpha>
+        <a:displaycode>411545</a:displaycode>
+        <a:externalalphakey>1123675</a:externalalphakey>
+        <a:name>TV</a:name>
+        <a:components>
+          <a:component type="Video Component">
+            <a:displaycode>415325</a:displaycode>
+            <a:tapebarcode>TBD</a:tapebarcode>
+            <a:filedescriptors>
+              <a:filedescriptor>
+                <a:filename>SPE_Community_0201_TV_English_178_2398_223243_415325_ref.mov</a:filename>
+              </a:filedescriptor>
+            </a:filedescriptors>
+            <a:componentgroupassociations>
+              <a:componentgroupassociation>
+                <a:componentgroup>
+                  <a:displaycode>223243</a:displaycode>
+                </a:componentgroup>
+                <a:offset>0</a:offset>
+              </a:componentgroupassociation>
+            </a:componentgroupassociations>
+            <a:screenaspectratio>16x9</a:screenaspectratio>
+            <a:activepictureaspectratio>
+            </a:activepictureaspectratio>
+            <a:activepictureformat>Pillarboxed</a:activepictureformat>
+            <a:textedlanguage>English</a:textedlanguage>
+            <a:burnedinsubtitlelanguage>None</a:burnedinsubtitlelanguage>
+            <a:framerate>23.976</a:framerate>
+            <a:horizontalresolutionpixels>1920</a:horizontalresolutionpixels>
+            <a:verticalresolutionpixels>1080</a:verticalresolutionpixels>
+            <a:runtime>0:0</a:runtime>
+            <a:activetopleftx>0</a:activetopleftx>
+            <a:activetoplefty>0</a:activetoplefty>
+            <a:activebottomrightx>0</a:activebottomrightx>
+            <a:activebottomrighty>0</a:activebottomrighty>
+          </a:component>
+          
+        </a:components>
+
+      </a:alpha>
+
+    </a:alphas>
+
+  </e:title>
+
+</loggingpayload>
+

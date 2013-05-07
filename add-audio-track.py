@@ -323,30 +323,31 @@ root = tree.getroot()
 
 components = root[1][6][0][3]
 
-audio_component = ET.Element('a:component', {'type': 'Audio Track Component'})
-
 if answers[0] == 1: # both 5.1 and stereo
     # create 5.1 component
+    audio_component = ET.Element('a:component', {'type': 'Audio Track Component'})
     a_config = ET.Element('a:audioconfiguration')
     a_config.text = 'Discrete Multi Track 5.1 MOV'
     a_content = ET.Element('a:audiocontent')
     a_content.text = get_selection(2)
     language = ET.Element('a:language')
     language.text = get_selection(3)
-    a_components = ET.Element('a:audiocomponents')
+    a_components = ET.Element('a:audiochannelcomponents')
     for i, assignment in enumerate(['Left', 'Right', 'Front Center', 'LFE', 'Rear Left', 'Rear Right']):
         acc = create_audiochannelcomponent(get_selection(4), str(i+1), assignment)
         a_components.append(acc)
     audio_component.extend([a_config, a_content, language, a_components])
+    components.append(audio_component)
 
 #create stereo component
+audio_component = ET.Element('a:component', {'type': 'Audio Track Component'})
 a_config = ET.Element('a:audioconfiguration')
 a_config.text = 'Discrete Multi Track Stereo MOV'
 a_content = ET.Element('a:audiocontent')
 a_content.text = get_selection(2)
 language = ET.Element('a:language')
 language.text = get_selection(3)
-a_components = ET.Element('a:audiocomponents')
+a_components = ET.Element('a:audiochannelcomponents')
 if answers[0] == 1:
     assignments = ['Left Total', 'Right Total']
     offset = 6 # so that audiochannelinfile & audiochannelontape are 7 and 8

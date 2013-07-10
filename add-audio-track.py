@@ -376,4 +376,4 @@ output_filename = "{}{}{}{}_DiscreteMultipleTracks.xml".format(
 )
 info("\nWriting file {} ...", format(output_filename))
 
-tree.write(output_filename, encoding='UTF-8')
+tree.write(output_filename, encoding='UTF-8', xml_declaration=False)
